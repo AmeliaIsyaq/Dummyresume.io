@@ -1,0 +1,41 @@
+header {
+    display: flex;   
+    justify-content: space-between;
+}
+
+body{
+    color:#E42256;
+    background-color: white;
+}
+
+.Logo a {
+    font-weight: 500;
+    font-size: 1.5em;
+    padding: 1em 1.8em;
+    color: #E42256;
+    text-decoration: none;
+}
+
+a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #E42256;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    padding:1em 0;
+    display: inline-block;
+}
+
+nav a:hover:not(.active) {
+    text-decoration: underline;
+    color: #FF8370;
+  }
+  
+  .active {
+    background-color:#FF8370;
+    text-decoration: underline;
+    color: white;
+  }
+
+

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="About.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contact-box">
+        <p class="header-text">Get in touch!✨</p>    
+        <form name="myForm" id="myForm">    
+        <table class="contact-form">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="names" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Subject</td>
+                <td><input type="text" name="subject" required></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+                <td><textarea cols="25" rows="6" name="message" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Rating</td>
+                <td>1<input type="radio" name="rate" value="1" required> 2<input type="radio" name="rate" value="2"> 3<input type="radio" name="rate" value="3"> 4<input type="radio" name="rate" value="4"> 5<input type="radio" name="rate" value="5"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="button" class="btn" onclick="formValidation()" value="Submit"></td>
+            </tr>       
+        </table>
+    </form>
+    </div>
+    <script>
+        function formValidation(){
+            var n = document.forms["myForm"]["names"].value;
+            var e = document.forms["myForm"]["email"].value;
+            var s = document.forms["myForm"]["subject"].value;
+            var m = document.forms["myForm"]["message"].value;
+            var r = document.forms["myForm"]["rate"].value;
+            
+            if(n=="")
+            {
+                alert("please enter your name");
+            }
+            else if(e==""){
+                alert("email must be filled out");
+            }
+            else if(s==""){
+                alert("please type out a subject");
+            }
+            else if(m==""){
+                alert("you cannot leave message blank");
+            }
+            else if(r==""){
+                alert("please rate me");
+            }
+            else{
+                alert("data submitted! thank you!");
+                document.getElementById("myForm").reset();
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

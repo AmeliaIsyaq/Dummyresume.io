@@ -1,0 +1,44 @@
+body{
+    background-image: url(images/pattern1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;   
+    overflow: hidden;
+    }
+
+ .container {
+    width: 600px;  
+    height: 400px; 
+    margin: 8% auto;
+}   
+
+.container p{
+    color: #1b1b1b;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.container img{
+    width:310px;
+    margin:1% 20%;
+    border-radius: 1000px;
+    box-shadow: 10px 10px #4452c8;
+}
+
+.container .subtext{
+    color: #1b1b1b;
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: -8%;
+}
+
+.circle {
+    background-color: #FEC84D;
+    position: absolute;
+    left:600px;
+    top:450px;
+    z-index: 4;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+}

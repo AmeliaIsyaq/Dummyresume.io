@@ -1,0 +1,59 @@
+
+body {
+    background-image: url(images/pattern3.png);
+    background-size: 100%;
+}
+
+/* darkblue:#4452c8; */
+
+.abt-me{
+    width:500px;
+    margin: 0 auto;
+}
+
+.abt-me,.videos{
+    border:3px solid bisque; 
+    border-radius: 25px;
+    padding:20px;
+    background-color:bisque;     
+}
+
+.abt-me .text-row{
+    font-weight: 600;
+}
+
+.union{
+    margin-left: 100px;
+    display: flex;
+    width: 1250px; 
+}
+
+.videos{
+    width: 560px;
+   text-align: center;
+    margin: 0 auto;
+}
+
+/* CONTACT.HTML */
+
+.btn {
+    background-color: white;
+    border-radius: 50%;
+    border-color: bisque;
+    border-width:0px;
+    padding:15px;
+}
+.contact-box{
+    width: 330px;
+    background-color: bisque;
+    padding: 2%;
+    margin: 7% auto;
+    border-radius: 50px;
+}
+
+.contact-form{
+    width:280px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
